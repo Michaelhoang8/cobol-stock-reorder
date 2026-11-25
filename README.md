@@ -22,6 +22,6 @@ Quantities range from 0 to 999999. Targets below the minimum, blank/invalid SKUs
 
 Exit status is 0 for accepted input, 2 when any row is rejected, and 1 for usage or file errors. Input must be a text file with one record per line; trailing padding spaces are ignored. Reads and closes check file status.
 
-The independent Python harness executes the compiled COBOL binary against the checked-in fixture, 24 numeric boundary cases, five reject cases, empty input and a missing file. GnuCOBOL was unavailable locally, so native execution is delegated to Ubuntu CI.
+The independent Python harness executes the compiled COBOL binary against the checked-in fixture, 24 numeric boundary cases, five reject cases, empty input and a missing file. All checks passed with GnuCOBOL 3.1.2.0 and Python 3.12 in an Ubuntu container. Ubuntu CI rebuilds and repeats the harness.
 
 File handling and free-format syntax follow the [GnuCOBOL manual](https://gnucobol.sourceforge.io/doc/gnucobol.html).
