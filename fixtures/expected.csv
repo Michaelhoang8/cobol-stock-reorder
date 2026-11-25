@@ -1,0 +1,5 @@
+line,status,sku,reorder_units,reason
+1,ORDER,WIDGET-A,38,
+2,KEEP,WIDGET-B,0,
+3,KEEP,WIDGET-C,0,
+4,ORDER,WIDGET-D,1,
